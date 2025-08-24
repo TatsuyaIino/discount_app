@@ -1,5 +1,6 @@
-<!doctype html>
-<title>お得情報サイト</title>
+{% extends "base.html" %}
+{% block title %}お得情報サイト{% endblock %}
+{% block content %}
 <h2>今月のお得情報</h2>
 <ul>
   <li>格安SIMキャンペーン：最大1万円キャッシュバック</li>
@@ -7,3 +8,5 @@
   <li>電気料金プラン切替 5,000円割引</li>
 </ul>
 <a href="/login">ログイン</a> / <a href="/register">新規登録</a>
+{% endblock %}
+
