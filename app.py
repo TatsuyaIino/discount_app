@@ -74,6 +74,14 @@ def logout():
     flash("ログアウトしました。")
     return redirect(url_for("index"))
 
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 if __name__ == "__main__":
     # Render用：環境変数PORTで起動ポートが来る
     port = int(os.environ.get("PORT", 10000))
